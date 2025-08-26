@@ -1,0 +1,13 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio / Rider / VSCode files
+*.user
+*.suo
+*.vscode/
+*.idea/
+
+# Secret files
+appsettings.Development.json
+appsettings.Local.json
