@@ -57,10 +57,15 @@ dotnet run
 📂 Estrutura do Projeto
 TodoListDIO/
  ├── Context/      # Configuração do DbContext
+ 
  ├── Controllers/  # Endpoints da API
+ 
  ├── Migrations/   # Migrations do Entity Framework
+ 
  ├── Models/       # Classes de domínio (Tarefa)
+ 
  ├── TodoDIO.sln   # Solução do .NET
+ 
  └── Program.cs    # Configuração da API e serviços
  
 
@@ -69,4 +74,5 @@ TodoListDIO/
 
 Desenvolvido por Glayberson
  como parte da Trilha .NET - API e Entity Framework da DIO 🚀
+
 
