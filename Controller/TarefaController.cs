@@ -22,7 +22,7 @@ namespace TodoDIO.Controllers
             if (tarefa == null)
                 return NotFound();
 
-            return Ok();
+            return Ok(tarefa);
         }
 
         [HttpGet("ObterTodos")]
@@ -51,7 +51,7 @@ namespace TodoDIO.Controllers
         [HttpGet("ObterPorStatus")]
         public IActionResult ObterPorStatus(EnumStatusTarefa status)
         {
-       
+
             var tarefa = _context.Tarefas.Where(x => x.Status == status);
             return Ok(tarefa);
         }
@@ -62,8 +62,8 @@ namespace TodoDIO.Controllers
             if (tarefa.DataCriacao == DateTime.MinValue)
                 return BadRequest(new { Erro = "A data da tarefa não pode ser vazia" });
 
-           _context.Tarefas.Add(tarefa);
-           _context.SaveChanges();
+            _context.Tarefas.Add(tarefa);
+            _context.SaveChanges();
             return CreatedAtAction(nameof(ObterPorId), new { id = tarefa.Id }, tarefa);
         }
 
@@ -75,16 +75,14 @@ namespace TodoDIO.Controllers
             if (tarefaBanco == null)
                 return NotFound();
 
-            if (tarefa.DataCriacao == DateTime.MinValue)
-                return BadRequest(new { Erro = "A data da tarefa não pode ser vazia" });
-
+        
             tarefaBanco.Titulo = tarefa.Titulo;
             tarefaBanco.Descricao = tarefa.Descricao;
-            tarefaBanco.DataCriacao = tarefa.DataCriacao;
+            tarefaBanco.DataCriacao = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc);
             tarefaBanco.Status = tarefa.Status;
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
-            return Ok();
+            return Ok(tarefaBanco);
         }
 
         [HttpDelete("{id}")]
@@ -99,5 +97,6 @@ namespace TodoDIO.Controllers
             _context.SaveChanges();
             return NoContent();
         }
+       
     }
 }

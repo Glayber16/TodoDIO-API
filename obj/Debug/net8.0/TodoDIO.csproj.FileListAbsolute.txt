@@ -133,3 +133,4 @@ C:\Users\Documentos\Desktop\Apis\TodoDIO\obj\Debug\net8.0\refint\TodoDIO.dll
 C:\Users\Documentos\Desktop\Apis\TodoDIO\obj\Debug\net8.0\TodoDIO.pdb
 C:\Users\Documentos\Desktop\Apis\TodoDIO\obj\Debug\net8.0\TodoDIO.genruntimeconfig.cache
 C:\Users\Documentos\Desktop\Apis\TodoDIO\obj\Debug\net8.0\ref\TodoDIO.dll
+C:\Users\Documentos\Desktop\Apis\TodoDIO\obj\Debug\net8.0\TodoDIO.sourcelink.json
