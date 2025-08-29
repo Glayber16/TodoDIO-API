@@ -56,6 +56,7 @@ dotnet run
 
 📂 Estrutura do Projeto
 TodoListDIO/
+
  ├── Context/      # Configuração do DbContext
  
  ├── Controllers/  # Endpoints da API
@@ -74,5 +75,6 @@ TodoListDIO/
 
 Desenvolvido por Glayberson
  como parte da Trilha .NET - API e Entity Framework da DIO 🚀
+
 
 
