@@ -37,7 +37,7 @@ Deletar uma tarefa
 
 ⚙️ Como Executar
 # Clone o repositório
-git clone https://github.com/seu-usuario/TodoDIO.git
+git clone https://github.com/Glayber16/TodoDIO.git
 
 # Acesse a pasta do projeto
 cd TodoDIO
@@ -69,3 +69,4 @@ TodoListDIO/
 
 Desenvolvido por Glayberson
  como parte da Trilha .NET - API e Entity Framework da DIO 🚀
+
